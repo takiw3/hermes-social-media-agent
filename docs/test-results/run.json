@@ -3,9 +3,9 @@
   "environment": "macOS 26.6.2 (arm64, Apple M2), Node v22.23.1, FFmpeg 8.1, Python 3.10.9",
   "hermes": "0.21.5 (tag v2026.9.24, commit f97608f)",
   "hyperframes": "0.8.138",
-  "validate": "pending",
-  "vendor": "pending",
-  "contract": "pending",
-  "evals": "pending",
-  "published_install": "not run. Runs after publication."
+  "validate": "pass. 9451 checks passed, 0 failed",
+  "vendor": "pass. 731 checks passed, 0 failed",
+  "contract": "pass. 10 observations re-checked, 0 changed",
+  "evals": "pass. 78 scenarios, 49 zero tolerance, 0 problems. Fixture validation only; no model was run.",
+  "published_install": "pass. `hermes profile install github.com/takiw3/hermes-social-media-agent --alias`, confirmation prompt answered, payload byte-identical. Included in the installation tests above."
 }

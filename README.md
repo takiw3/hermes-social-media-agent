@@ -424,6 +424,7 @@ A browser you pointed at with `--use-browser` is yours and stays. Your workspace
 
 | Symptom | What to do |
 | --- | --- |
+| Install fails with `could not read Username` | The repository is private to you. Hermes clones with your `gh` login or a `GITHUB_TOKEN`; run `gh auth login` and try again. |
 | `video engine: not configured` | Run `$HF doctor`. It names each missing piece and the command that fixes it. |
 | Node.js too old | Upgrade Node.js to 22 or newer yourself. Nothing else is changed. |
 | `approval required`, naming a host | The composition loads from a host you have not approved. Approve it with `$HF setup --allow-host <host>` or remove the reference. |
@@ -441,13 +442,13 @@ Recorded on 2026-10-06, macOS 26.6.2 (arm64, Apple M2), Node v22.23.1, FFmpeg 8.
 
 | Suite | Result |
 | --- | --- |
-| Repository validation (`scripts/validate.py --history`) | pending |
-| Vendor provenance and derivative rebuild (`scripts/hyperframes_vendor.py verify`) | pending |
-| Upstream contract (`scripts/check_upstream_contract.py`) | pending |
-| Eval fixtures (`scripts/run_evals.py`) | pending |
-| Installation tests, in a temporary profile | 75 pass, 0 fail, 2 not run |
+| Repository validation (`scripts/validate.py --history`) | pass. 9451 checks passed, 0 failed |
+| Vendor provenance and derivative rebuild (`scripts/hyperframes_vendor.py verify`) | pass. 731 checks passed, 0 failed |
+| Upstream contract (`scripts/check_upstream_contract.py`) | pass. 10 observations re-checked, 0 changed |
+| Eval fixtures (`scripts/run_evals.py`) | pass. 78 scenarios, 49 zero tolerance, 0 problems. Fixture validation only; no model was run. |
+| Installation tests, in a temporary profile | 80 pass, 0 fail, 0 not run |
 | HyperFrames integration tests, from an installed temporary profile, with real renders | 108 pass, 0 fail, 0 not run |
-| Install from the published GitHub URL | not run. Runs after publication. |
+| Install from the published GitHub URL | pass. `hermes profile install github.com/takiw3/hermes-social-media-agent --alias`, confirmation prompt answered, payload byte-identical. Included in the installation tests above. |
 | Model-backed behavior evaluation | not run. No model credentials in the test environment. |
 | End-to-end Kanban test with live Executive, Marketing, and Social Media profiles | not run. Needs model access and a dispatcher. |
 | Linux and Windows | not run. Tested on macOS arm64 only. CI runs the no-render suites on Ubuntu. |
