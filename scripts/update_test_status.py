@@ -54,6 +54,7 @@ def main() -> int:
 | Installation tests, in a temporary profile | {counts(install)} |
 | HyperFrames integration tests, from an installed temporary profile, with real renders | {counts(integ)} |
 | Install from the published GitHub URL | {meta.get('published_install', 'not run')} |
+| GitHub Actions CI | {meta.get('ci', 'not run')} |
 | Model-backed behavior evaluation | not run. No model credentials in the test environment. |
 | End-to-end Kanban test with live Executive, Marketing, and Social Media profiles | not run. Needs model access and a dispatcher. |
 | Linux and Windows | not run. Tested on macOS arm64 only. CI runs the no-render suites on Ubuntu. |

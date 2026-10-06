@@ -442,13 +442,14 @@ Recorded on 2026-10-06, macOS 26.6.2 (arm64, Apple M2), Node v22.23.1, FFmpeg 8.
 
 | Suite | Result |
 | --- | --- |
-| Repository validation (`scripts/validate.py --history`) | pass. 9451 checks passed, 0 failed |
+| Repository validation (`scripts/validate.py --history`) | pass. 0 failed of 9,458 checks at commit f57c2c4, including the Git history secret scan |
 | Vendor provenance and derivative rebuild (`scripts/hyperframes_vendor.py verify`) | pass. 731 checks passed, 0 failed |
 | Upstream contract (`scripts/check_upstream_contract.py`) | pass. 10 observations re-checked, 0 changed |
 | Eval fixtures (`scripts/run_evals.py`) | pass. 78 scenarios, 49 zero tolerance, 0 problems. Fixture validation only; no model was run. |
 | Installation tests, in a temporary profile | 80 pass, 0 fail, 0 not run |
 | HyperFrames integration tests, from an installed temporary profile, with real renders | 108 pass, 0 fail, 0 not run |
 | Install from the published GitHub URL | pass. `hermes profile install github.com/takiw3/hermes-social-media-agent --alias`, confirmation prompt answered, payload byte-identical. Included in the installation tests above. |
+| GitHub Actions CI | pass on GitHub Actions at commit f57c2c4 (Ubuntu, validation and no-render suites) |
 | Model-backed behavior evaluation | not run. No model credentials in the test environment. |
 | End-to-end Kanban test with live Executive, Marketing, and Social Media profiles | not run. Needs model access and a dispatcher. |
 | Linux and Windows | not run. Tested on macOS arm64 only. CI runs the no-render suites on Ubuntu. |
