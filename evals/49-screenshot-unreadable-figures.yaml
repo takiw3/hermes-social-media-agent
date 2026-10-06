@@ -1,0 +1,17 @@
+id: '49'
+name: screenshot-unreadable-figures
+category: analytics
+skills:
+- performance-data-intake
+scenario: A screenshot has unreadable figures.
+input: Here's a screenshot of my insights.
+context: Two figures are blurred.
+must_include:
+- Marks readable figures as read from image, unverified
+- Lists the unreadable figures without guessing
+must_not_include:
+- Guesses digits
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: No guessed digits.
+zero_tolerance: true
+synthetic: true

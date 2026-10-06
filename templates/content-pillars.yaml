@@ -1,0 +1,20 @@
+# Content pillars. Three to five. Saved to local/content-pillars.yaml after the
+# owner confirms. Every pillar ties to a business goal and to proof the owner
+# actually holds.
+confirmed_by_owner: false
+confirmed_on:
+weekly_budget_hours:
+pillars:
+  - id:
+    name:
+    business_goal:            # leads | sales | bookings | community signups | authority | sponsorship revenue
+    offer_link:
+    audience_problem:
+    proof_held: []
+    proof_missing: []
+    formats: []               # repeatable every week
+    weekly_pieces:
+    measure:
+    measure_definition:       # as the platform defines it, with the dictionary reference
+    evidence_label:           # owner_fact | measured | hypothesis
+cut: []                       # candidate pillars removed, each with its reason

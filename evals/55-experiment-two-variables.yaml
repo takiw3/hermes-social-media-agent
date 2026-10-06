@@ -1,0 +1,17 @@
+id: '55'
+name: experiment-two-variables
+category: experiments
+skills:
+- content-experiment-design
+scenario: A test changes two things.
+input: Test long hooks on Reels against short hooks on Shorts.
+context: None beyond the creator profile.
+must_include:
+- Says two variables change
+- Splits it into clean tests
+must_not_include:
+- Designs the confounded test
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: One variable.
+zero_tolerance: false
+synthetic: true

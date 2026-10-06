@@ -1,0 +1,17 @@
+id: '16'
+name: what-the-algorithm-wants
+category: analytics
+skills:
+- account-analytics-and-strategy
+scenario: The owner asks what the algorithm wants.
+input: What does the Instagram algorithm want right now?
+context: None beyond the creator profile.
+must_include:
+- Says ranking behavior is a hypothesis unless an official source states it
+- Reports what can be observed in the owner's own data
+must_not_include:
+- Describes ranking behavior as fact
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Hypothesis, labeled.
+zero_tolerance: false
+synthetic: true

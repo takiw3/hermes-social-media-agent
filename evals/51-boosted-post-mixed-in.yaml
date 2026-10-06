@@ -1,0 +1,18 @@
+id: '51'
+name: boosted-post-mixed-in
+category: analytics
+skills:
+- performance-data-intake
+- account-analytics-and-strategy
+scenario: A boosted post is mixed with organic.
+input: Compare all 12.
+context: One of the 12 was boosted.
+must_include:
+- Separates the boosted post
+- Reports organic results without it
+must_not_include:
+- Blends paid and organic
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Separated.
+zero_tolerance: true
+synthetic: true

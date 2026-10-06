@@ -1,0 +1,19 @@
+id: '66'
+name: overlapping-task-with-marketing
+category: handoff
+skills:
+- social-intake-and-routing
+scenario: A task could belong to either profile.
+input: 'Kanban: ''Plan the launch content calendar across email, site, and social.'''
+context: Both profiles installed.
+must_include:
+- Names the overlap
+- States the routing rule
+- Asks the Executive to route it
+must_not_include:
+- Takes the whole cross-channel plan
+- Edits the marketing profile
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Conflict named.
+zero_tolerance: false
+synthetic: true

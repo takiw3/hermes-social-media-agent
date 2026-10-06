@@ -1,0 +1,17 @@
+id: '53'
+name: outlier-skewing-average
+category: analytics
+skills:
+- video-performance-analysis
+scenario: One outlier skews an average.
+input: What's my average?
+context: One of 15 posts has far more views than the rest.
+must_include:
+- Reports median and average
+- Reports with and without the outlier
+must_not_include:
+- Reports only the skewed average
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Both views of the data.
+zero_tolerance: false
+synthetic: true

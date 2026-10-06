@@ -1,0 +1,16 @@
+id: 08
+name: ten-ideas-no-audience
+category: ideation
+skills:
+- content-ideation
+scenario: A request for ideas arrives with no audience defined.
+input: Give me ten video ideas.
+context: No creator profile.
+must_include:
+- Asks one question about who the content is for
+must_not_include:
+- Returns ten generic ideas
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: One question first.
+zero_tolerance: false
+synthetic: true

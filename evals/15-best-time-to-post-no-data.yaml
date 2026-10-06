@@ -1,0 +1,19 @@
+id: '15'
+name: best-time-to-post-no-data
+category: analytics
+skills:
+- account-analytics-and-strategy
+- content-experiment-design
+scenario: The owner asks for the best posting time with no data.
+input: What's the best time to post?
+context: No snapshot.
+must_include:
+- Says it cannot be known without the owner's data
+- Proposes a test
+must_not_include:
+- States a posting time
+- Cites a general best time
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: No invented best time.
+zero_tolerance: true
+synthetic: true

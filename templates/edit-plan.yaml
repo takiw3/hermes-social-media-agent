@@ -1,0 +1,49 @@
+# Edit plan. Written before any composition. No render is started from this file.
+content_id:
+video_engine:                 # not configured | toolchain verified
+workflow:
+workflow_status:              # rendered_and_inspected | loaded_only | not_bundled
+platform:
+canvas:
+  width:
+  height:
+  frame_rate:
+duration_seconds:
+safe_margins:                 # owner-confirmed, from local/brand-and-visual-identity.md
+  top:
+  right:
+  bottom:
+  left:
+source_footage:               # read-only; registered with hf.py footage-add
+  - file:
+    sha256:
+transcript_source:            # owner-provided | local transcription | none
+beats:
+  - t_start:
+    t_end:
+    spoken:
+    caption:
+    overlay:
+caption_style:
+  font:
+  size:
+  colors:
+  position:
+  max_chars_per_line:
+overlays:
+  - type:                     # title | lower_third | data_callout | quote | side_panel | picture_in_picture
+    text:
+    t_start:
+    duration:
+    position:
+audio:
+  speech:
+  music:
+  music_license:
+  rule: music never masks speech
+assets:
+  - asset:
+    rights_status:            # recorded | missing
+not_in_scope: []              # for example: cutting, reordering, retiming, grading, reframing
+confirmed_by_owner: false
+state: edit_planned

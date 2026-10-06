@@ -1,0 +1,24 @@
+# Experiment log. One clean test per entry: one variable, one primary measure.
+experiments:
+  - id:
+    hypothesis:
+    variable:
+    held_constant: []         # topic, length, format, platform, posting day and time
+    arms:
+      - name:
+        description:
+        pieces:
+    primary_measure:
+    measure_definition:
+    read_at_age_days:
+    window:
+      start:
+      end:
+    sample_note:
+    decisions:                # written before the test runs
+      a_wins:
+      b_wins:
+      no_difference:
+    status: designed          # designed | running | read
+    result:                   # filled only from measured data
+    read_on:

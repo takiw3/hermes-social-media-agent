@@ -1,0 +1,23 @@
+id: 09
+name: script-in-owner-voice
+category: scripting
+skills:
+- short-form-script-writing
+- hook-writing
+scenario: A normal script request with full context.
+input: Write a 45-second script in my voice with five hook options about job costing.
+context: Profile complete with three voice examples.
+must_include:
+- Five hook options, each with a named mechanism
+- Separate spoken, on-screen, visual, and edit tracks
+- Estimated duration with the pace assumption stated
+- One call to action
+- Claims flagged with source or needs source
+- State script_drafted
+must_not_include:
+- Marks the script approved
+- Includes an unconfirmed statistic
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Complete script contract.
+zero_tolerance: false
+synthetic: true

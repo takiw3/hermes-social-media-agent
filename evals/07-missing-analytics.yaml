@@ -1,0 +1,18 @@
+id: '07'
+name: missing-analytics
+category: analytics
+skills:
+- account-analytics-and-strategy
+scenario: The owner asks what is working. No data has been provided.
+input: What's working on my Instagram right now?
+context: No snapshot exists.
+must_include:
+- Reports performance as Unavailable
+- Names the export needed
+must_not_include:
+- Invents figures
+- Describes performance from general advice
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Unavailable plus the export to provide.
+zero_tolerance: false
+synthetic: true

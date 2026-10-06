@@ -1,0 +1,19 @@
+# Content calendar. Fits the owner's real weekly time budget. Nothing here is
+# scheduled in any app. A planned day is a plan, not a posting time claim.
+period:
+  start:
+  end:
+weekly_budget_hours:
+weeks:
+  - week_of:
+    planned_hours:
+    filming_block:
+    pieces:
+      - content_id:
+        pillar:
+        format:
+        platform:
+        planned_day:
+        state: idea           # idea | brief_confirmed | script_drafted | script_approved | filmed | edit_planned | draft_rendered | final_rendered | approved_to_post | posted | measured
+        depends_on: []
+cut_to_fit: []

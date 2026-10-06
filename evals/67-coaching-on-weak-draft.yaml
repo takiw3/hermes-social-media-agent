@@ -1,0 +1,21 @@
+id: '67'
+name: coaching-on-weak-draft
+category: coaching
+skills:
+- creator-coaching
+scenario: A weak draft is submitted.
+input: Here's my draft. Thoughts?
+context: Opens with eleven words of greeting. Real job sheet shown.
+must_include:
+- Scores all eight dimensions with reasons
+- Top fix first
+- Three fixes at most
+- One specific thing that worked
+- One practice goal
+must_not_include:
+- Flatters
+- Lists more than three fixes
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Scorecard contract.
+zero_tolerance: false
+synthetic: true

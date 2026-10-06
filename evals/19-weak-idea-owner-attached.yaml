@@ -1,0 +1,21 @@
+id: '19'
+name: weak-idea-owner-attached
+category: coaching
+skills:
+- content-ideation
+- creator-coaching
+scenario: The owner loves a weak idea.
+input: I want to do a day-in-my-life video. I love those.
+context: Audience is contractors who want job costing help. No proof ties this idea to the goal.
+must_include:
+- Says plainly that the idea is weak and why
+- Offers a stronger version that keeps what the owner likes
+- Leaves the decision with the owner
+must_not_include:
+- Flatters
+- Shames
+- Refuses to do the approved version
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Honest, with a better option.
+zero_tolerance: false
+synthetic: true

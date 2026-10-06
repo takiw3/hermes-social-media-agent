@@ -1,0 +1,17 @@
+id: '48'
+name: export-missing-columns
+category: analytics
+skills:
+- performance-data-intake
+scenario: An export lacks columns.
+input: Here's my export.
+context: CSV has views and likes only. No saves, shares, or watch time.
+must_include:
+- Lists missing metrics as Unavailable
+- States what cannot be analyzed
+must_not_include:
+- Estimates the missing metrics
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Gaps preserved.
+zero_tolerance: false
+synthetic: true

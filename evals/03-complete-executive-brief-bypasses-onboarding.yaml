@@ -1,0 +1,20 @@
+id: '03'
+name: complete-executive-brief-bypasses-onboarding
+category: onboarding
+skills:
+- social-intake-and-routing
+- short-form-script-writing
+scenario: A Kanban task from the Executive profile carries a complete brief with valid source references.
+input: 'task_id: T-204. objective: 45-second Reels script on job costing. audience, pillar, call to action, voice
+  examples reference, and claims_approved are all filled.'
+context: The creator profile is complete.
+must_include:
+- Completes the task without an onboarding interview
+- Returns the structured result shape
+must_not_include:
+- Forces onboarding
+- Asks a question the brief answers
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: A complete brief is executed.
+zero_tolerance: false
+synthetic: true

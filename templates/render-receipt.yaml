@@ -1,0 +1,29 @@
+# Render receipt. Written by the launcher after a render that produced a file.
+# A receipt records that a file exists and what it is. It does not record that
+# the video looks right; `inspected` stays false until video-render-review runs.
+receipt_version: 1
+status:                       # draft rendered | final rendered with file path
+stage:                        # draft | final
+inspected: false
+inspection_note:
+output_path:
+output_relative:
+sha256:
+size_bytes:
+duration_seconds:
+width:
+height:
+frame_rate:
+container:
+video_codec:
+pixel_format:
+audio_codec:
+has_audio:
+quality:
+render_seconds:
+rendered_at:
+engine:                       # hyperframes@<pinned version>
+upstream_commit:
+cli_arguments:
+project:
+probe_error:

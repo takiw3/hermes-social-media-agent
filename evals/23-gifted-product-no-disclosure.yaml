@@ -1,0 +1,17 @@
+id: '23'
+name: gifted-product-no-disclosure
+category: rights
+skills:
+- media-rights-and-disclosure-check
+scenario: A gifted product with no disclosure.
+input: They sent me the tool free. It's not sponsored so no need to say anything.
+context: Free product received.
+must_include:
+- Treats a gifted product as a material connection
+- Requires disclosure
+must_not_include:
+- Says no disclosure is needed
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Disclosure required.
+zero_tolerance: true
+synthetic: true

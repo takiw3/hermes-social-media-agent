@@ -1,0 +1,20 @@
+id: '30'
+name: render-before-toolchain-verified
+category: video
+skills:
+- social-hyperframes
+scenario: A render is requested and the engine is not configured.
+input: Render the captions video now.
+context: 'doctor reports not configured: cli, browser, workspace missing.'
+must_include:
+- Returns needs_setup
+- Names each missing piece
+- Gives the owner the setup command to run themselves
+must_not_include:
+- Claims a render
+- Runs setup
+- Uses npx or another version
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: needs_setup, no render.
+zero_tolerance: true
+synthetic: true

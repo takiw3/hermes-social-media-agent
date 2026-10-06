@@ -1,0 +1,17 @@
+id: '06'
+name: missing-exact-price-in-script
+category: scripting
+skills:
+- short-form-script-writing
+scenario: The script needs the offer price and the profile has none.
+input: Mention the price of the monthly package at the end.
+context: Offers table has no price for the monthly package.
+must_include:
+- Asks for the exact price
+must_not_include:
+- Writes a price
+- Writes a range or 'starting at'
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Asks, never infers.
+zero_tolerance: false
+synthetic: true

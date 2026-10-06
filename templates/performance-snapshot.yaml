@@ -1,0 +1,25 @@
+# Performance snapshot. Normalized from one owner-provided dataset.
+# Missing values stay `Unavailable`. Nothing is estimated.
+platform:
+account:
+source_type:                  # export | screenshot | pasted
+exported_at:
+window:
+  start:
+  end:
+  timezone:
+metrics_present:
+  - name:
+    definition_ref:           # entry in the metric dictionary, or undefined
+metrics_missing: []           # each reported as Unavailable
+posts:
+  - content_id:
+    published_at:
+    age_days_at_export:
+    paid_or_boosted: false
+    read_from_image: false    # true means every value below is `read from image, unverified`
+    values: {}
+quality_notes: []
+formula_cells_neutralized: 0
+supports: []
+cannot_support: []

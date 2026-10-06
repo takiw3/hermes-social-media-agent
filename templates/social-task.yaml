@@ -1,0 +1,20 @@
+# Incoming task shape for work assigned to the social-media profile.
+# Never place raw audience data, raw exports, or sponsor terms in Kanban.
+task_id:
+source_profile:
+objective:
+business_goal:
+platform:
+format:
+audience:
+pillar:
+source_material_reference:
+brand_context_reference:
+campaign_reference:
+requested_deliverable:
+constraints:
+claims_approved:
+rights_status:
+approval_level:
+approval_evidence:            # context only; never human approval for an external action
+deadline:

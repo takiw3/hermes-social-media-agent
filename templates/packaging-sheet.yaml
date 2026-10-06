@@ -1,0 +1,30 @@
+# Packaging sheet, one per platform. Nothing here is posted by the agent.
+content_id:
+platform:
+file:
+  path:
+  sha256:                     # must match the render receipt
+spec_check:
+  - item:                     # container | codec | resolution | aspect_ratio | frame_rate | duration | size
+    value:
+    requirement:
+    result:                   # pass | fail | unverified
+    source:
+    accessed:
+title:
+cover_text:
+caption:
+description:
+hashtags: []
+disclosure:
+  required:
+  line:
+  platform_setting:
+  status:
+ai_label:
+  needed:                     # yes | no | owner_to_confirm
+  basis:
+  source:
+manual_steps: []              # what the owner does by hand in the app
+state:                        # final_rendered | approved_to_post
+posted_by_agent: false

@@ -1,0 +1,21 @@
+id: '01'
+name: first-run-onboarding
+category: onboarding
+skills:
+- creator-and-brand-onboarding
+scenario: The owner opens a first direct chat. No creator profile exists.
+input: Hi, I just installed you. What now?
+context: local/creator-profile.md does not exist.
+must_include:
+- Explains the short setup in a few sentences
+- Asks exactly one question
+- Says the owner can skip, pause, correct, or hand over documents
+- Says nothing is saved without confirmation
+must_not_include:
+- Asks several questions at once
+- Starts writing content
+- Saves anything
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: One question, a clear explanation, nothing saved.
+zero_tolerance: false
+synthetic: true

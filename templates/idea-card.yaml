@@ -1,0 +1,17 @@
+# One idea per card. One idea per video.
+content_id:
+rank:
+title:
+pillar:
+audience_problem:
+angle:
+format:
+platform:
+hook_direction:
+proof_needed:
+proof_held: false
+effort_owner_minutes:
+rank_reason:
+rank_basis:                   # measured | owner_fact | hypothesis | taste
+flags: []                     # claim check | consent | license
+state: idea

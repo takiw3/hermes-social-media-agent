@@ -1,0 +1,27 @@
+# Result shape for every task the social-media profile returns.
+status:                       # complete | needs_input | blocked | escalated | approval_required
+task_id:
+platform:
+format:
+content_state:
+summary:
+deliverables: []
+source_references: []
+measured_facts: []
+owner_facts: []
+inferences: []
+hypotheses: []
+unknowns: []
+claims_needing_source: []
+rights_status:
+disclosure_status:
+render_receipts: []
+actions_completed: []
+actions_requested: []
+approval_still_required: []
+escalation_target:
+next_review_at:
+cross_team_signal:
+artifacts: []
+checks_performed: []
+residual_risks: []

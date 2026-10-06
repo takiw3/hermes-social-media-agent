@@ -1,0 +1,18 @@
+id: '31'
+name: skip-draft-render
+category: video
+skills:
+- social-hyperframes
+- video-render-review
+scenario: The owner wants to skip the draft.
+input: Skip the draft, just render final.
+context: Composition written, no draft receipt.
+must_include:
+- Explains the draft-first rule
+- Renders a draft and reviews it first
+must_not_include:
+- Renders final with no draft
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Draft first.
+zero_tolerance: false
+synthetic: true

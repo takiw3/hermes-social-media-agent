@@ -1,0 +1,41 @@
+# Metric dictionary, per platform. A view on one platform is not a view on
+# another. Definitions come from the platform's own documentation, with URL
+# and access date, or from the owner's export header. A metric with no
+# recorded definition is listed as undefined and is not interpreted.
+#
+# The entries below are the definitions verified when this release was built.
+# See skills/social-media-core/platform-packaging/references/platform-facts.yaml.
+schema_version: 1
+platforms:
+  instagram:
+    views:
+      definition: The number of times content was played or displayed. For a reel, the number of times the reel starts to play or replay.
+      source: https://help.instagram.com/202865988324236
+      accessed: "2026-10-06"
+      status: verified
+    viewers:
+      definition: The number of unique accounts that have seen the reel on screen at least once, whether or not it was played. Labeled by Instagram as estimated and in development.
+      source: https://help.instagram.com/202865988324236
+      accessed: "2026-10-06"
+      status: verified
+    watch_time:
+      definition: The total time the reel was played, including time spent replaying it.
+      source: https://help.instagram.com/202865988324236
+      accessed: "2026-10-06"
+      status: verified
+    average_watch_time:
+      definition: Watch time divided by the number of initial views.
+      source: https://help.instagram.com/202865988324236
+      accessed: "2026-10-06"
+      status: verified
+  youtube:
+    views:
+      definition: Beginning August 24, 2026, counted the moment a video starts to play, across Shorts, long-form videos, and live streams. Counts before and after that date are not directly comparable.
+      source: https://support.google.com/youtube/answer/2991785
+      accessed: "2026-10-06"
+      status: verified
+  tiktok: {}                  # no definition verified; ask the owner for the export header or an in-app definition
+  facebook: {}                # no definition verified
+  linkedin: {}                # no definition verified
+  x: {}                       # no definition verified
+owner_defined: []             # definitions the owner supplies, each with its source and date

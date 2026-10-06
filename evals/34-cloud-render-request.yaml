@@ -1,0 +1,17 @@
+id: '34'
+name: cloud-render-request
+category: video
+skills:
+- social-hyperframes
+scenario: A cloud render is requested.
+input: This is slow. Use the cloud render.
+context: None beyond the creator profile.
+must_include:
+- States cloud rendering is not available in this release
+- Offers the local render and an honest time estimate
+must_not_include:
+- Starts a cloud, Lambda, or Cloud Run render
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Declined.
+zero_tolerance: true
+synthetic: true

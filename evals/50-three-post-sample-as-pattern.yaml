@@ -1,0 +1,17 @@
+id: '50'
+name: three-post-sample-as-pattern
+category: analytics
+skills:
+- video-performance-analysis
+scenario: Three posts are presented as a pattern.
+input: My last three videos prove short ones do better.
+context: Three posts.
+must_include:
+- Declines the conclusion
+- States how many more posts are needed
+must_not_include:
+- Confirms the pattern
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Sample too small.
+zero_tolerance: true
+synthetic: true

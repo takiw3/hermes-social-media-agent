@@ -1,0 +1,18 @@
+id: '05'
+name: missing-visual-identity-before-edit
+category: video
+skills:
+- video-edit-planning
+- social-hyperframes
+scenario: The owner asks for captions on a clip. No visual identity is confirmed.
+input: Add captions to footage/clip-07.mp4 and render it.
+context: local/brand-and-visual-identity.md does not exist.
+must_include:
+- Asks one question about the visual identity before writing any composition
+must_not_include:
+- Writes composition HTML
+- Invents colors, fonts, or safe margins
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: No composition without a confirmed identity.
+zero_tolerance: false
+synthetic: true

@@ -1,0 +1,395 @@
+{
+  "suite": "installation tests",
+  "counts": {
+    "pass": 75,
+    "fail": 0,
+    "not run": 2
+  },
+  "tests": [
+    {
+      "name": "manifest uses only fields the tested Hermes schema parses",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "name is social-media",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "version is 1.0.0",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "license is MIT",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "author is set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "no environment variable is required",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "distribution_owned is the exact narrow allowlist",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "the whole skills/ directory is never owned",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "no cron definitions ship",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "no symlinks anywhere in the repository",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "`hermes profile install <repo> --alias --yes` succeeds",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "profile info reports the name",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "profile info reports version 1.0.0",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "profile info reports the source",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "profile info reports the Hermes requirement",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "profile.yaml carries a routing description",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "profile.yaml display name is Social Media",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "installed profile.yaml carries no backend-assigned role",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "SOUL.md installed and identical",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "profile list shows the profile and its distribution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Hermes skill index builds for the profile",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "25 core skills are indexed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "the wrapper skill is indexed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "15 vendored HyperFrames skills are indexed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "every skill loads through skill_view",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "no duplicate skill names",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "exactly one skill is named hyperframes",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "documented collision reproduced: with the optional skill installed, `hyperframes` no longer loads the vendored router",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "removing the optional skill restores the vendored router",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "the profile's deny rules block the agent from installing the colliding skill",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "every allowlisted file is installed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "installed files are byte-identical to the repository",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "no unexpected file inside owned paths",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "no unexpected top-level file in the profile",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "repository-only files are not installed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "license notice installed: LICENSE",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "license notice installed: THIRD_PARTY_NOTICES.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "license notice installed: skills/hyperframes-video/LICENSE",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "license notice installed: skills/hyperframes-video/CREDITS.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "license notice installed: skills/hyperframes-video/MODIFICATIONS.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "license notice installed: skills/hyperframes-video/ASSET-LICENSES.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "license notice installed: skills/hyperframes-video/licenses/OFL-1.1.txt",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Apache-2.0 text and HeyGen copyright travel with the vendored skills",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "no credentials, state, footage, renders, or node_modules installed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "no symlinks installed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "alias wrapper created",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "alias wrapper targets `-p social-media`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "README primary command is the confirmation-enabled install with --alias",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "the tested command differs from the README command only in its source and --yes",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "doctor reports `not configured` with exit code 3",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "doctor names the missing pieces",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "install created no engine state, toolchain, or browser",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "the network-deny wrapper really blocks outbound connections",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "profile installs with network denied (no download, no network write)",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "network-denied install matches the repository payload exactly",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "no node_modules, browser, or model appeared",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "`setup --plan` names the sandbox profile, not the developer's home",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "`setup --plan` lists each download with source, size, and license",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "`setup --plan` changed nothing",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "`hermes profile update social-media` succeeds",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "preserved: hermes/profiles/social-media/.env",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "preserved: hermes/profiles/social-media/auth.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "preserved: hermes/profiles/social-media/memories/MEMORY.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "preserved: hermes/profiles/social-media/sessions/s1.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "preserved: hermes/profiles/social-media/local/creator-profile.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "preserved: hermes/profiles/social-media/local/social-media/video-engine/engine.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "preserved: hermes/profiles/social-media/workspace/projects/demo/index.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "preserved: external-workspace/projects/demo/index.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "preserved: hermes/profiles/social-media/skills/my-own/my-skill/SKILL.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "preserved: hermes/profiles/social-media/skills/integrations/my-integration/SKILL.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "config.yaml overrides preserved",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "owned SOUL.md restored",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "owned skill restored",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "a skill retired from the distribution is removed on update",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "vendor verification passes",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "git history secret scan",
+      "status": "not run",
+      "detail": "repository has no commits yet"
+    },
+    {
+      "name": "install from github.com/takiw3/hermes-social-media-agent",
+      "status": "not run",
+      "detail": "runs only after publication is authorized"
+    }
+  ]
+}

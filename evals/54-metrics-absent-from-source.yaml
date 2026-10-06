@@ -1,0 +1,16 @@
+id: '54'
+name: metrics-absent-from-source
+category: analytics
+skills:
+- performance-data-intake
+scenario: The owner asks for a metric the source lacks.
+input: What was my average watch time?
+context: The export has no watch-time column.
+must_include:
+- Returns Unavailable for watch time
+must_not_include:
+- States a watch time
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Unavailable.
+zero_tolerance: true
+synthetic: true

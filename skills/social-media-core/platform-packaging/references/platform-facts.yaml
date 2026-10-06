@@ -1,0 +1,398 @@
+# Platform facts this profile is allowed to state.
+#
+# Rules:
+#   * A fact may be stated to the owner only if its status is `verified`.
+#   * `verified` means the official page was read directly on the `accessed`
+#     date and the statement below is what that page said.
+#   * `not_verified` means the official page could not be read or does not
+#     state the fact. The agent says so and asks the owner to confirm in the
+#     app. It never fills the gap from memory.
+#   * Platforms change these often. A fact older than 90 days is re-read at
+#     its URL before being relied on. Updating this file is a repository
+#     change, reviewed like any other.
+#   * Nothing here is a benchmark, a best practice, or a claim about ranking.
+#
+# This file states policy summaries for reference. It is not legal advice.
+schema_version: 1
+compiled_on: "2026-10-06"
+stale_after_days: 90
+
+facts:
+  # ---------------------------------------------------------------- YouTube
+  - platform: youtube
+    topic: shorts_definition
+    statement: >-
+      For standard channels, a video uploaded on or after October 15, 2024
+      with a square or vertical aspect ratio and a length of up to three
+      minutes is categorized as a Short.
+    source_url: https://support.google.com/youtube/answer/15424877
+    accessed: "2026-10-06"
+    status: verified
+  - platform: youtube
+    topic: shorts_resolution
+    statement: Shorts can be uploaded with a maximum resolution of 1080p.
+    source_url: https://support.google.com/youtube/answer/10059070
+    accessed: "2026-10-06"
+    status: verified
+  - platform: youtube
+    topic: shorts_content_id
+    statement: >-
+      A Short longer than one minute with an active Content ID claim of any
+      type is blocked globally on YouTube.
+    source_url: https://support.google.com/youtube/answer/15424877
+    accessed: "2026-10-06"
+    status: verified
+  - platform: youtube
+    topic: long_form_orientation
+    statement: >-
+      To keep a video from being classified as a Short, YouTube says to use a
+      wider aspect ratio such as 16:9. The standard aspect ratio for YouTube
+      on a computer is 16:9.
+    source_url: https://support.google.com/youtube/answer/15424877
+    accessed: "2026-10-06"
+    status: verified
+  - platform: youtube
+    topic: upload_encoding
+    statement: >-
+      Recommended upload encoding: MP4 container, H.264 video codec, AAC-LC or
+      Opus audio codec. Content should be encoded and uploaded at the frame
+      rate it was recorded in; common frame rates include 24, 25, 30, 48, 50,
+      and 60 frames per second.
+    source_url: https://support.google.com/youtube/answer/1722171
+    accessed: "2026-10-06"
+    status: verified
+  - platform: youtube
+    topic: metric_views
+    statement: >-
+      Beginning August 24, 2026, YouTube counts a view the moment a video
+      starts to play across all formats, including Shorts, long-form videos,
+      and live streams. YouTube Partner Program earnings remain based on
+      engaged views and engaged watch hours. View counts on either side of
+      that date are not directly comparable.
+    source_url: https://support.google.com/youtube/answer/2991785
+    accessed: "2026-10-06"
+    status: verified
+  - platform: youtube
+    topic: paid_promotion_disclosure
+    statement: >-
+      A video featuring branded content, sponsorships, endorsements, or other
+      commercial relationships must be declared to YouTube by selecting the
+      paid promotion setting in the video details, which adds a disclosure
+      label at the beginning of the video. Creators and partners remain
+      responsible for applicable legal requirements.
+    source_url: https://support.google.com/youtube/answer/154235
+    accessed: "2026-10-06"
+    status: verified
+  - platform: youtube
+    topic: ai_content_disclosure
+    statement: >-
+      Creators must disclose, using the AI use setting in YouTube Studio, AI
+      content that makes a real person appear to say or do something they did
+      not do, alters footage of a real event or place, generates a realistic
+      scene that did not occur, or creates music that is the main focus of
+      the video. Non-realistic content and minor edits do not need disclosure;
+      YouTube's examples of what does not need disclosure include caption
+      creation, production assistance such as outlines, scripts, thumbnails
+      and titles, and cloning one's own voice for voice-overs or dubs.
+    source_url: https://support.google.com/youtube/answer/14328491
+    accessed: "2026-10-06"
+    status: verified
+
+  # -------------------------------------------------------------- Instagram
+  - platform: instagram
+    topic: reels_specs
+    statement: >-
+      A reel can be uploaded with an aspect ratio between 1.91:1 and 9:16.
+      Reels should have a minimum frame rate of 30 frames per second and a
+      minimum resolution of 720 pixels. The recommended cover photo size is
+      420 by 654 pixels (1:1.55).
+    source_url: https://help.instagram.com/1038071743007909
+    accessed: "2026-10-06"
+    status: verified
+  - platform: instagram
+    topic: metric_views
+    statement: >-
+      Account insights define views as the number of times content was played
+      or displayed. For a reel, views is the number of times the reel starts
+      to play or replay. Viewers is the number of unique accounts that have
+      seen the reel on screen at least once, whether or not it was played,
+      and is labeled by Instagram as estimated and in development. Watch time
+      is the total time the reel was played, including replays. Average watch
+      time is watch time divided by the number of initial views.
+    source_url: https://help.instagram.com/202865988324236
+    accessed: "2026-10-06"
+    status: verified
+  - platform: instagram
+    topic: reels_insights_availability
+    statement: >-
+      Reel insights require a public account, are available for reels posted
+      on or after May 14, 2021, and can be viewed for up to two years after
+      the reel's original publish date.
+    source_url: https://help.instagram.com/202865988324236
+    accessed: "2026-10-06"
+    status: verified
+  - platform: instagram
+    topic: branded_content_disclosure
+    statement: >-
+      Meta defines branded content as organic content for which the creator
+      has been compensated by a brand or business partner, which may include
+      gifted products and services. Creators must tag the business partner,
+      which shows a "Paid partnership with" label. Content with an affiliate
+      link should carry the paid partnership label and does not need a
+      business partner tagged. On Instagram the label can be applied in Feed,
+      Stories, Broadcast Channels, Live, Reels, and Instagram videos.
+    source_url: https://www.facebook.com/business/help/788160621327601
+    accessed: "2026-10-06"
+    status: verified
+  - platform: instagram
+    topic: ai_content_label
+    statement: >-
+      Instagram publishes a "Label AI content on Instagram" help article. Its
+      device-specific instructions and the exact conditions that require a
+      label were not readable when this file was compiled.
+    source_url: https://help.instagram.com/761121959519495
+    accessed: "2026-10-06"
+    status: not_verified
+  - platform: instagram
+    topic: caption_and_hashtag_limits
+    statement: No official page stating caption or hashtag limits was read.
+    source_url: https://help.instagram.com
+    accessed: "2026-10-06"
+    status: not_verified
+  - platform: instagram
+    topic: safe_zones
+    statement: No official page stating numeric safe-zone margins was read.
+    source_url: https://help.instagram.com
+    accessed: "2026-10-06"
+    status: not_verified
+
+  # --------------------------------------------------------------- Facebook
+  - platform: facebook
+    topic: reels_specs
+    statement: >-
+      Since June 2025 all videos posted to Facebook are shared as reels, and
+      reels can be any length or orientation. Recommended format is MP4,
+      recommended resolution 1080p, recommended video codec H.264 or H.265,
+      recommended frame rate 24 to 60 frames per second, audio AAC Low
+      Complexity in stereo at 44.1 kHz or 48 kHz.
+    source_url: https://www.facebook.com/business/help/1197310377458196
+    accessed: "2026-10-06"
+    status: verified
+  - platform: facebook
+    topic: branded_content_disclosure
+    statement: >-
+      The same Meta branded content rules apply as on Instagram: branded
+      content is organic content for which the creator has been compensated
+      by a business partner, including gifted products, and the creator must
+      tag the business partner so the paid partnership label is shown.
+    source_url: https://www.facebook.com/business/help/788160621327601
+    accessed: "2026-10-06"
+    status: verified
+  - platform: facebook
+    topic: metric_definitions
+    statement: No official page defining Facebook Reels metrics was read.
+    source_url: https://www.facebook.com/business/help
+    accessed: "2026-10-06"
+    status: not_verified
+  - platform: facebook
+    topic: ai_content_label
+    statement: No official page stating Facebook's AI labeling conditions was read.
+    source_url: https://www.facebook.com/help
+    accessed: "2026-10-06"
+    status: not_verified
+  - platform: facebook
+    topic: safe_zones
+    statement: No official page stating numeric safe-zone margins was read.
+    source_url: https://www.facebook.com/business/help
+    accessed: "2026-10-06"
+    status: not_verified
+
+  # ----------------------------------------------------------------- TikTok
+  - platform: tiktok
+    topic: video_length
+    statement: >-
+      Videos recorded in TikTok can be up to 10 minutes long. Videos uploaded
+      to TikTok can be up to 60 minutes long.
+    source_url: https://support.tiktok.com/en/using-tiktok/creating-videos/camera-tools
+    accessed: "2026-10-06"
+    status: verified
+  - platform: tiktok
+    topic: content_disclosure_setting
+    statement: >-
+      Content that promotes a brand, product, or service must have the
+      content disclosure setting turned on. This includes promoting yourself
+      or your own business. A post promoting the creator's own brand or
+      business is labeled "Promotional content". A post made on behalf of
+      another business is labeled "Paid partnership". Posts without the
+      proper disclosure may be removed or restricted.
+    source_url: https://www.tiktok.com/support/faq_detail?id=7636670088170904085
+    accessed: "2026-10-06"
+    status: verified
+    note: >-
+      The former URL support.tiktok.com/en/business-and-creator/creator-and-business-accounts/promoting-a-brand-product-or-service
+      redirected to this address on the access date.
+  - platform: tiktok
+    topic: branded_content_policy
+    statement: >-
+      TikTok's Branded Content Policy (published August 4, 2026, effective
+      August 31, 2026) defines branded content as content that promotes or
+      reviews a third-party brand or its products or services in exchange for
+      payment or any other incentive, including gifted products, paid posts,
+      commission through an affiliate link or promotional code, and a current
+      or past commercial relationship such as acting as a brand ambassador.
+      When posting it, the creator must enable the commercial content
+      disclosure toggle, must make the promoted product or service clear
+      without requiring viewers to visit the profile or a link, and must not
+      make false, deceptive, or misleading claims. The policy lists
+      prohibited and restricted industries.
+    source_url: https://www.tiktok.com/legal/page/global/bc-policy/en
+    accessed: "2026-10-06"
+    status: verified
+  - platform: tiktok
+    topic: ai_content_label
+    statement: >-
+      TikTok requires creators to label AI-generated content that contains
+      realistic images, audio, or video, and encourages labeling of content
+      completely generated or significantly edited by AI. The creator label
+      reads "creator labeled as AI-generated". TikTok may automatically apply
+      an "AI-generated" label, including when uploaded content carries C2PA
+      Content Credentials, and an automatic label cannot be removed by the
+      creator. Not allowed even if labeled: AI content showing fake
+      authoritative sources or crisis events, public figures falsely shown
+      in certain contexts such as making an endorsement, the likeness of
+      people under 18, or the likeness of adult private figures without
+      their permission.
+    source_url: https://www.tiktok.com/support/faq_detail?id=7636670084747893268
+    accessed: "2026-10-06"
+    status: verified
+    note: >-
+      The former URL support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content
+      redirected to this address on the access date.
+  - platform: tiktok
+    topic: file_specs
+    statement: >-
+      No official page stating upload resolution, aspect ratio, file size, or
+      codec requirements for organic posts was read. TikTok's ad
+      specifications are a different product and are not used here.
+    source_url: https://support.tiktok.com
+    accessed: "2026-10-06"
+    status: not_verified
+  - platform: tiktok
+    topic: metric_definitions
+    statement: >-
+      The official analytics help page did not return its metric definitions
+      to an automated read.
+    source_url: https://support.tiktok.com/en/using-tiktok/growing-your-audience/analytics-on-tiktok
+    accessed: "2026-10-06"
+    status: not_verified
+  - platform: tiktok
+    topic: safe_zones
+    statement: No official page stating numeric safe-zone margins was read.
+    source_url: https://support.tiktok.com
+    accessed: "2026-10-06"
+    status: not_verified
+
+  # --------------------------------------------------------------- LinkedIn
+  - platform: linkedin
+    topic: video_file_requirements
+    statement: >-
+      Video file requirements: maximum file size 5 GB, minimum 75 KB; maximum
+      duration 15 minutes; minimum duration 3 seconds from desktop and 2
+      seconds from the mobile app; resolution range 256x144 to 4096x2304;
+      aspect ratio 1:2.4 to 2.4:1; frame rate 10 to 60 frames per second; bit
+      rate 192 Kbps to 30 Mbps. Supported file types include MP4, MOV, AVI,
+      WEBM, and MKV. LinkedIn says to keep the edges of the video free of key
+      elements, text, and logos, and gives no numeric margin.
+    source_url: https://www.linkedin.com/help/linkedin/answer/a548372
+    accessed: "2026-10-06"
+    status: verified
+    note: 'The page showed "Last updated: 2 years ago" on the access date.'
+  - platform: linkedin
+    topic: brand_partnership_disclosure
+    statement: >-
+      Content shared in exchange for value, including monetary payment,
+      endorsements, free products or services, or other benefit, must be
+      labeled as a brand partnership using the Brand partnership toggle when
+      posting, and must comply with LinkedIn's Advertising Policies and
+      applicable local laws. The label is available only for Public posts.
+    source_url: https://www.linkedin.com/help/linkedin/answer/a1627083
+    accessed: "2026-10-06"
+    status: verified
+    note: 'The page showed "Last updated: 3 years ago" on the access date.'
+  - platform: linkedin
+    topic: metric_definitions
+    statement: No official page defining LinkedIn content metrics was read.
+    source_url: https://www.linkedin.com/help/linkedin
+    accessed: "2026-10-06"
+    status: not_verified
+  - platform: linkedin
+    topic: ai_content_label
+    statement: No official page stating LinkedIn's AI labeling conditions was read.
+    source_url: https://www.linkedin.com/help/linkedin
+    accessed: "2026-10-06"
+    status: not_verified
+
+  # ---------------------------------------------------------------------- X
+  - platform: x
+    topic: all_specs_and_policies
+    statement: >-
+      X's official help pages returned HTTP 403 to every automated read on
+      the access date, so no X specification, metric definition, paid
+      partnership rule, or synthetic media rule was verified. The official
+      pages are listed here for the owner to read: the paid partnerships
+      policy at help.x.com/en/rules-and-policies/paid-partnerships-policy,
+      video upload help at help.x.com/en/using-x/x-videos, and the
+      authenticity policy at help.x.com/en/rules-and-policies/authenticity.
+    source_url: https://help.x.com/en/rules-and-policies/paid-partnerships-policy
+    accessed: "2026-10-06"
+    status: not_verified
+
+  # -------------------------------------------------- Endorsement guidance
+  - platform: us_ftc
+    topic: when_to_disclose
+    statement: >-
+      FTC guidance says to disclose any financial, employment, personal, or
+      family relationship with a brand, and anything of value received to
+      mention a product, including free or discounted products. The
+      obligation applies even if followers may already know about the
+      relationship and even if the opinion is unbiased. Tags, likes, and
+      pins that show a brand preference can count as endorsements.
+    source_url: https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers
+    accessed: "2026-10-06"
+    status: verified
+    note: >-
+      The page refused the headless browser (HTTP 403) and was read through a
+      fetch-and-summarize tool. Wording here follows that summary.
+  - platform: us_ftc
+    topic: how_to_disclose
+    statement: >-
+      FTC guidance says to place the disclosure where it is hard to miss,
+      with the endorsement message itself. Do not rely on a profile page, the
+      end of a post or video, or text behind a "more" link, and do not mix
+      the disclosure into a group of hashtags. For video, the disclosure
+      belongs in the video and not only in the description, ideally in both
+      audio and visual form. For a live stream, repeat it periodically. Use
+      simple, clear language such as "ad", "advertisement", or "sponsored",
+      or a plain statement such as thanking a brand for a free product.
+      Vague terms such as "sp", "spon", "collab", or a standalone "thanks"
+      or "ambassador" are not enough. A platform's disclosure tool should be
+      used in addition to, not instead of, the creator's own disclosure.
+    source_url: https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers
+    accessed: "2026-10-06"
+    status: verified
+    note: Read through a fetch-and-summarize tool; see the entry above.
+  - platform: us_ftc
+    topic: owners_employees_affiliates_and_claims
+    statement: >-
+      FTC staff guidance says an employment or ownership relationship should
+      be disclosed in the post itself, since listing an employer in a profile
+      is not sufficient. Affiliate commissions should be disclosed clearly
+      and close to the link. Testimonials must reflect real experience, and
+      results presented as typical need substantiation from the advertiser.
+      Buying fake likes, followers, or reviews is described as clearly
+      deceptive. Responsibility for a clear and conspicuous disclosure rests
+      with the influencer and the brand, not the platform.
+    source_url: https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking
+    accessed: "2026-10-06"
+    status: verified
+    note: Read through a fetch-and-summarize tool; see the entry above.

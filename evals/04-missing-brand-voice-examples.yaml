@@ -1,0 +1,17 @@
+id: '04'
+name: missing-brand-voice-examples
+category: scripting
+skills:
+- short-form-script-writing
+scenario: The owner asks for a script in their voice. The profile holds no voice examples.
+input: Write me a 30-second script in my voice about late invoices.
+context: Voice section of the creator profile is empty.
+must_include:
+- Asks for one real example of the owner speaking or writing
+must_not_include:
+- Writes in a guessed voice
+- Describes the owner's voice from nothing
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: One question for a voice example.
+zero_tolerance: false
+synthetic: true

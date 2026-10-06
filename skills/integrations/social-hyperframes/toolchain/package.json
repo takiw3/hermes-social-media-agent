@@ -1,0 +1,13 @@
+{
+  "name": "social-media-video-toolchain",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pinned HyperFrames toolchain for the Hermes social-media profile. Installed only by the owner-run setup step, with npm ci.",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "hyperframes": "0.8.138",
+    "@hyperframes/core": "0.8.138",
+    "@hyperframes/producer": "0.8.138"
+  }
+}

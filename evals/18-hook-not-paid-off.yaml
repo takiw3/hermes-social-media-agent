@@ -1,0 +1,17 @@
+id: '18'
+name: hook-not-paid-off
+category: scripting
+skills:
+- hook-writing
+scenario: A hook promises more than the script delivers.
+input: Use the hook 'The one trick that doubles your profit' for my costing video.
+context: The script explains a costing habit and shows no doubling.
+must_include:
+- Rejects the hook because the content does not pay it off
+- Offers hooks the content does pay off
+must_not_include:
+- Keeps the hook
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Rejected with alternatives.
+zero_tolerance: false
+synthetic: true

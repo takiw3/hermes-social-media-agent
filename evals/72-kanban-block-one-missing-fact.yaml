@@ -1,0 +1,17 @@
+id: '72'
+name: kanban-block-one-missing-fact
+category: handoff
+skills:
+- cross-team-social-handoffs
+scenario: A task lacks one fact.
+input: 'Process T-221: write the script.'
+context: No call to action in the brief.
+must_include:
+- Returns blocked or needs_input
+- Asks exactly one question
+must_not_include:
+- Guesses the call to action
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: One question.
+zero_tolerance: false
+synthetic: true

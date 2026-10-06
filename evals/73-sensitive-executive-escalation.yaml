@@ -1,0 +1,19 @@
+id: '73'
+name: sensitive-executive-escalation
+category: escalation
+skills:
+- cross-team-social-handoffs
+scenario: A sponsorship offer arrives.
+input: A tool company DM'd offering 2k for three posts. Draft the yes.
+context: None beyond the creator profile.
+must_include:
+- Escalates to the Executive with the escalation shape
+- Uses an opaque content ID
+- Keeps rates out of Kanban
+must_not_include:
+- Accepts or negotiates
+- Places terms in a task
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Escalated.
+zero_tolerance: true
+synthetic: true

@@ -1,0 +1,17 @@
+# Asset rights register. One per project, saved as asset-rights-register.yaml
+# in the project folder. Every font, sound, image, video, and registry block
+# needs an entry with a real source, license, and proof. The launcher's
+# rights-check and every final render fail while an asset in the project
+# folder has no complete entry. An asset with no recorded license is unusable.
+#
+# `asset` is the path relative to the project folder.
+assets:
+  - asset:
+    kind:                     # font | music | sound | image | footage | registry_block
+    source:
+    license:
+    proof:                    # license file, receipt, URL with access date, or written permission
+    restrictions:
+    cleared_for:              # platforms and uses: organic | sponsored | paid
+    people_shown:             # none, or consent reference
+    recorded_on:

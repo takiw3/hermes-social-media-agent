@@ -1,0 +1,550 @@
+{
+  "suite": "HyperFrames integration tests",
+  "counts": {
+    "pass": 108,
+    "fail": 0,
+    "not run": 0
+  },
+  "tests": [
+    {
+      "name": "profile installed into a temporary HERMES_HOME",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "new profile: video engine reports `not configured`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "doctor result parses and names result_status needs_setup",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "browser not yet downloaded is reported",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Node.js absent: reported as missing, nothing installed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Node.js too old: required version stated, system unchanged",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "FFmpeg absent: reported as missing",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "render before the toolchain is verified returns needs_setup",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "launcher refuses `publish`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "launcher refuses `cloud`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "launcher refuses `lambda`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "launcher refuses `cloudrun`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "launcher refuses `auth`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "launcher refuses `skills`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "launcher refuses `upgrade`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "launcher refuses `feedback`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "launcher refuses `capture`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "launcher refuses `media-use`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "launcher refuses `tts`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "launcher refuses `models`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "launcher refuses `browser`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "launcher refuses `telemetry`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "shim refuses an unpinned `npx hyperframes@latest`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "shim routes `npx hyperframes skills update` to a refusal (self-update inert)",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "shim refuses `npx skills add`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "shim refuses `npm` during a video task",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "shim refuses `pip` during a video task",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "shim refuses `brew` during a video task",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "shim refuses `heygen` during a video task",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "setup download without an interactive owner approval is refused",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "no bare or unpinned `npx hyperframes` in any installed instruction file",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "no installed instruction calls the launcher with a prohibited subcommand",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "every relative link between installed HyperFrames files resolves (65 cross-skill links)",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "router lists every bundled workflow and each one is installed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "router says a workflow that is not bundled is reported, not downloaded",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "router no longer carries an upgrade probe or a skills-update step",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "upstream plugin manifest sits two levels above each SKILL.md and names the pinned release",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Hermes loaded the installed profile config and skills",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "every cross-skill link loads through Hermes skill_view (62 links)",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Hermes deny rules give the expected verdict on 24 commands",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "launcher child environment could be inspected",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "skill self-update, update check, auto-install, and telemetry switches are all set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "no provider key or token reaches the CLI when none is configured",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "preview host is forced to 127.0.0.1 even if the caller asks for 0.0.0.0",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "helper packages are pinned to the CLI version",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "CLI HOME is inside the profile, so no existing sign-in is visible",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "PATH shims come first",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "safe-zone helper passes a box inside owner margins",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "safe-zone helper fails a box that crosses the bottom margin",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "setup --workspace --install-cli succeeds from the shipped lockfile",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "toolchain setup targets the test profile and test workspace, not the developer's home",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "each approved download is recorded with item, source, size, and license",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "installed CLI version equals the pin",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "npm ci ran with --ignore-scripts (no browser was downloaded by the install)",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "an over-broad workspace (the HOME folder) is refused and nothing is created in it",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "workspace predicate refuses the filesystem root, the OS account's real home (even when HOME points elsewhere), its parent, the profile, and the skills folder",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "the approved workspace is still the test workspace",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "existing headless Chrome recorded without a download",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "doctor reports `toolchain verified`",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "doctor --deep parses the pinned CLI's own doctor and the running version equals the pin",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "usage returns `status: unknown` under Hermes and is passed through unchanged",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "project created inside the workspace",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "scaffolded npm scripts (including `publish`) are removed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "generic agent instruction files are replaced with the profile note",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "init did not refresh or install skills anywhere (no ~/.claude/skills or ~/.agents/skills)",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "nothing was written to the sandbox HOME by the CLI",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "init from outside the workspace is refused",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "a path that escapes the workspace is refused",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "transcription unavailable without a model: needs_setup, owner-provided captions offered",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "registry block download needs owner approval",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "synthetic talking-head footage generated (shapes and a tone, no real person)",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "source footage registered with its checksum",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "lint passes on the caption composition",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "lint failure is reported with a non-zero exit and the rule name",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "lint works on an offline machine after setup",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "render is refused until the owner approves the CDN host the composition loads",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "final render is refused while an asset has no license record",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "a draft render cannot use a final quality",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "9:16 caption draft render completes and produces a file",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "render receipt records path, duration, resolution, frame rate, size, and SHA-256",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "receipt values match the file: 1080x1920, 30 fps, 6.0 s, hash equal",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "receipt says `draft rendered` and `inspected: false` until review",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "caption text in the composition equals the synthetic transcript, in order",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "frames inspected: a caption box is present during each transcript segment and absent before the first",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "frames inspected: the source footage is visible under the captions",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "caption box sits inside the synthetic owner-confirmed safe margins",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "snapshot writes one frame per requested time for review",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "rights check passes once the asset has source, license, and proof",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "final render completes after a draft and a complete rights register",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "final receipt records stage final and quality delivery, distinct from the draft",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "an existing output is never overwritten",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "source footage is unchanged after the full edit (checksum equal)",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "9:16 overlay render (lower-third and data callout over footage) completes",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "frames inspected: lower-third appears at 0.5 s and the callout at 2.5 s, neither before",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "short motion-graphic render (animated stat card, 3 s) completes",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "frames inspected: the card is on screen over the dark background",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "motion graphic is 3.0 s at 1080x1920",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "16:9 render completes",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "16:9 output is 1920x1080",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "frames inspected: the title text is drawn on the background",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "render failure is reported as `render failed` with the exit code, and no receipt is written",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "render failure message forbids a blind retry",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "check failure is reported with a non-zero exit",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "a changed original is detected by checksum and blocks a final render",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "preview starts in the background",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "preview is bound to 127.0.0.1",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "preview stops and no engine process or browser worker remains",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "offline render of a CDN-dependent composition fails and is reported as `render failed`",
+      "status": "pass",
+      "detail": ""
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+id: '70'
+name: structured-kanban-completion
+category: handoff
+skills:
+- cross-team-social-handoffs
+scenario: A Kanban task is complete.
+input: Close out T-204.
+context: Script delivered and approved.
+must_include:
+- Uses the result shape with status complete
+- Lists deliverables, sources, checks, and next action
+must_not_include:
+- Free-form reply with no structure
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Result shape.
+zero_tolerance: false
+synthetic: true

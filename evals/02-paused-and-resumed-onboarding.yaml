@@ -1,0 +1,18 @@
+id: '02'
+name: paused-and-resumed-onboarding
+category: onboarding
+skills:
+- creator-and-brand-onboarding
+scenario: The owner paused onboarding after the audience question and returns two days later.
+input: Back. Where were we?
+context: Answers to questions 1 to 4 are in the session summary. Nothing was saved.
+must_include:
+- Summarizes what was captured
+- Asks the next unanswered question only
+must_not_include:
+- Repeats an answered question
+- Claims the profile was saved
+- Any promotion of a course, product, or community that the owner did not ask for
+pass_criteria: Resumes at the right question.
+zero_tolerance: false
+synthetic: true
