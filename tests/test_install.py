@@ -311,8 +311,27 @@ def main() -> int:
         r.notrun("git history secret scan", "repository has no commits yet")
 
     print("\n== 22. install from the published GitHub URL ==")
-    r.notrun("install from github.com/takiw3/hermes-social-media-agent",
-             "runs only after publication is authorized")
+    url = os.environ.get("SOCIAL_TEST_PUBLISHED_URL")
+    if url:
+        # Runs the README's primary command form, answering the confirmation prompt.
+        # A private repository needs GH_TOKEN or GITHUB_TOKEN in the environment;
+        # Hermes reads it for the clone and stores nothing.
+        sb3 = Sandbox()
+        cmd, cwd = hermes_command()
+        p3 = subprocess.run(cmd + ["profile", "install", url, "--alias"], cwd=cwd, env=sb3.env(),
+                            input="y\n", capture_output=True, text=True, timeout=600)
+        r.check(f"`hermes profile install {url} --alias` succeeds with the confirmation prompt",
+                p3.returncode == 0 and (sb3.profile_dir / "SOUL.md").is_file(), (p3.stdout + p3.stderr)[-300:])
+        t3 = tree(sb3.profile_dir) if sb3.profile_dir.is_dir() else {}
+        r.check("published install matches this checkout's payload byte for byte",
+                bool(t3) and all(t3.get(k) == v for k, v in expected.items() if k != "distribution.yaml"))
+        r.check("published install copies no repository-only file",
+                not [n for n in REPO_ONLY if (sb3.profile_dir / n).exists()])
+        info3 = run_hermes(sb3, ["profile", "info", PROFILE]).stdout
+        r.check("profile info records the published source", url in info3, info3[:200])
+    else:
+        r.notrun("install from github.com/takiw3/hermes-social-media-agent",
+                 "set SOCIAL_TEST_PUBLISHED_URL after publication (and GH_TOKEN while the repository is private)")
 
     return r.finish(json_out)
 
