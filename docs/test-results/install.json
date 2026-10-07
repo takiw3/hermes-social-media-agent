@@ -387,7 +387,7 @@
       "detail": ""
     },
     {
-      "name": "`hermes profile install github.com/takiw3/hermes-social-media-agent --alias` succeeds with the confirmation prompt",
+      "name": "`hermes profile install https://github.com/takiw3/hermes-social-media-agent --alias` succeeds with the confirmation prompt",
       "status": "pass",
       "detail": ""
     },
