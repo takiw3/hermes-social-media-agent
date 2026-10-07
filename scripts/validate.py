@@ -19,7 +19,7 @@ import yaml
 
 REPO = Path(__file__).resolve().parent.parent
 SELF = {"scripts/validate.py", "scripts/run_evals.py"}
-GITHUB = "github.com/takiw3/hermes-social-media-agent"
+GITHUB = "https://github.com/takiw3/hermes-social-media-agent"
 
 CORE_SKILLS = """social-intake-and-routing creator-and-brand-onboarding audience-and-niche-research
 content-pillar-strategy content-ideation hook-writing short-form-script-writing long-form-script-writing

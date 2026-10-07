@@ -2,6 +2,22 @@
 
 All notable changes to this profile are recorded here. The project follows semantic versioning.
 
+## Unreleased
+
+### Changed
+
+- README restructured to match the other Hermes profile distributions in this series: who it's for, what it does, what it will not do, requirements, install, first run, the team, working with Jarvis, example tasks, skills, permission model, data and privacy, optional integrations, update, remove, troubleshooting.
+- The primary install command now uses the full `https://` URL, as the sibling profiles do. The short `github.com/...` form still works. Both were tested against the published repository.
+
+### Added
+
+- The install test covers the published URL when `SOCIAL_TEST_PUBLISHED_URL` is set.
+- `.gitignore` patterns for cloud-sync conflict copies.
+
+### Fixed
+
+- The bundled font copyright record is now byte-stable across platforms. One font's notice contains a carriage return, which changed the file when it was rebuilt without fontTools.
+
 ## 1.0.0 - 2026-10-06
 
 First release. Release status: **draft-and-render release**.

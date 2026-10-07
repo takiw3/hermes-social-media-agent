@@ -205,7 +205,7 @@ def main() -> int:
     print("\n== 14. README command ==")
     readme = (REPO / "README.md").read_text(encoding="utf-8") if (REPO / "README.md").is_file() else ""
     r.check("README primary command is the confirmation-enabled install with --alias",
-            "hermes profile install github.com/takiw3/hermes-social-media-agent --alias\n" in readme)
+            "hermes profile install https://github.com/takiw3/hermes-social-media-agent --alias\n" in readme)
     r.check("the tested command differs from the README command only in its source and --yes",
             True)
 
